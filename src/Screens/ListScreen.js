@@ -83,17 +83,15 @@ const ListScreen = ({navigation}) => {
                 <Header navigation={navigation}/>
                 <TitleBox title={'Games List'}/>
 
-                <ScrollView style={{height: 600 }}>
-                    <View>
-                        <FlatList
-                            data={gameList}
-                            keyExtractor={(item => item.key)}
-                            renderItem={({item}) =>
-                                <GameBox title={item.title} system={item.system} rating={item.rating}
-                                         image={item.image}/>
-                            }/>
-                    </View>
-                </ScrollView>
+                <View style={{height: 600}}>
+                    <FlatList
+                        data={gameList}
+                        keyExtractor={(item => item.key)}
+                        renderItem={({item}) =>
+                            <GameBox title={item.title} system={item.system} rating={item.rating}
+                                     image={item.image}/>
+                        }/>
+                </View>
 
             </View>
         </ImageBackground>
