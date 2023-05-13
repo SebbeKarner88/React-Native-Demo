@@ -1,17 +1,19 @@
 import React from "react";
-import {Dimensions, Image, Keyboard, StyleSheet, Text, TouchableWithoutFeedback, View} from "react-native";
+import {Dimensions, Image, Keyboard, StyleSheet, Text, TouchableWithoutFeedback, TouchableOpacity, Linking,  View} from "react-native";
 
-const GameBox = ({title, system, image, rating}) => {
+const GameBox = ({title, system, image, rating, link}) => {
 
     return (
         <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
             <View style={{alignItems: 'center'}}>
                 <View style={styles.gameBox}>
                     <View style={styles.gameCard}>
-                        <Image
+                        <TouchableOpacity onPress={() => {Linking.openURL(`${link}`)}}>
+                            <Image
                             style={styles.image}
                             source={{uri: `${image}`}}
                         />
+                        </TouchableOpacity>
                         <View>
                             <Text style={styles.Title}>{title}</Text>
                             <Text style={styles.system}>{system}</Text>

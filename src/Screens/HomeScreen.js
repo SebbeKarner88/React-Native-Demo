@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Text, ImageBackground, Dimensions} from "react-native";
+import {View, Text, ImageBackground, Dimensions} from "react-native";
 import Header from '../components/Header';
 
 
@@ -15,13 +15,12 @@ const HomeScreen = ({navigation}) => {
             <View>
                 <Header navigation={navigation}/>
 
-                <Text>HOME</Text>
+                <Text>HÄR MÅSTE VI LÄGGA IN NÅ SNYGGT!!!</Text>
 
             </View>
         </ImageBackground>
     )
 };
 
-const styles = StyleSheet.create({});
 
 export default HomeScreen;
