@@ -66,7 +66,14 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold',
         color: '#5fc4e4',
-        textAlign: 'center'
+        textAlign: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 4,
+            height: 4,
+        },
+        shadowOpacity: 0.9,
+        shadowRadius: 1
     },
     modText: {
         marginBottom: 15,

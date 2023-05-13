@@ -29,7 +29,7 @@ const GameBox = ({title, system, image, rating, link}) => {
 const styles = StyleSheet.create({
     gameBox: {
         flex: 1,
-        backgroundColor: 'rgba(0,0,0,0.64)',
+        backgroundColor: 'rgba(0,0,0,0.51)',
         marginTop: 30,
         width: Dimensions.get('window').width - 50,
         height: 150,
@@ -40,6 +40,13 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         justifyContent: 'center',
         alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 6,
+            height:6,
+        },
+        shadowOpacity: 0.9,
+        shadowRadius: 2
     },
     Title: {
         fontSize: 22,

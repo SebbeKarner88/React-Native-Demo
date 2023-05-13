@@ -38,7 +38,7 @@ you still look good!`}/>
 
 const styles = StyleSheet.create({
     inputBox: {
-        backgroundColor: 'rgba(0,0,0,0.72)',
+        backgroundColor: 'rgba(0,0,0,0.53)',
         marginTop: 30,
         width: Dimensions.get('window').width - 50,
         height: 'auto',
@@ -48,7 +48,14 @@ const styles = StyleSheet.create({
         borderColor: '#60c5e5',
         borderWidth: 2,
         justifyContent: 'flex-start',
-        alignItems: 'center'
+        alignItems: 'center',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 6,
+            height: 6,
+        },
+        shadowOpacity: 0.9,
+        shadowRadius: 2
     }
 });
 

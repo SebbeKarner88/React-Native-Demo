@@ -29,7 +29,7 @@ const Header = ({navigation}) => {
 const styles = StyleSheet.create({
 
     container: {
-        backgroundColor: 'rgba(0,0,0,0.66)',
+        backgroundColor: 'rgba(0,0,0,0.54)',
         borderBottomColor: 'rgb(96,197,229)',
         borderStyle: 'solid',
         borderBottomWidth: 2,
