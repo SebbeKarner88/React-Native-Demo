@@ -4,7 +4,7 @@ import {Image, TouchableOpacity, StyleSheet, View} from "react-native";
 const HeaderLogo = ({navigation, path}) => {
 
     return <TouchableOpacity
-        onPress={() => navigation.navigate('Home')}>
+        onPress={() => navigation.navigate(`${path}`)}>
         <View
             height={75}
             width={75}
@@ -25,6 +25,14 @@ const styles = StyleSheet.create({
         borderStyle: 'solid',
         borderWidth: 2,
         borderColor: 'rgb(95,196,228)',
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 4,
+            height: 4,
+        },
+        shadowOpacity: 0.9,
+        shadowRadius: 1
+
     },
     logoPic: {
         marginTop: 2,

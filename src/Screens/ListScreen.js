@@ -102,7 +102,6 @@ const ListScreen = ({navigation}) => {
                                      image={item.image} link={item.link}/>
                         }/>
                 </View>
-
             </View>
         </ImageBackground>
     )

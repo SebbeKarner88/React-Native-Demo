@@ -18,12 +18,10 @@ const InputScreen = ({navigation}) => {
                     <Header navigation={navigation}/>
                     <TitleBox title={'Text Input'}/>
                     <NameAgeBox/>
-
                 </View>
             </ImageBackground>
         </TouchableWithoutFeedback>
     )
-
 };
 
 export default InputScreen;

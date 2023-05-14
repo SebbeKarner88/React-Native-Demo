@@ -11,14 +11,14 @@ const ModalPopup = ({title, text}) => {
                 visible={modal}
                 onRequestClose={() => setModal(!modal)}>
                 <View style={styles.centeredView}>
-                    <View style={styles.modView}>
+                    <View style={[styles.modView, styles.shadow]}>
                         <Text style={styles.modText}>
                             {text}
                         </Text>
                         <TouchableOpacity
                             onPress={() => setModal(!modal)}>
                             <Text
-                                style={styles.Button}>Close</Text>
+                                style={[styles.Button]}>Close</Text>
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -26,7 +26,7 @@ const ModalPopup = ({title, text}) => {
 
             <TouchableOpacity>
                 <Text
-                    style={styles.Button}
+                    style={[styles.Button, styles.shadow]}
                     onPress={() => setModal(true)}>
                     {title}
                 </Text>
@@ -52,28 +52,13 @@ const styles = StyleSheet.create({
         borderRadius: 15,
         borderStyle: 'solid',
         borderColor: '#60c5e5',
-        borderWidth: 2,
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 8,
-            height: 8,
-        },
-        shadowOpacity: 0.9,
-        shadowRadius: 4,
-        elevation: 5,
+        borderWidth: 2
     },
     Button: {
         fontSize: 20,
         fontWeight: 'bold',
         color: '#5fc4e4',
-        textAlign: 'center',
-        shadowColor: '#000',
-        shadowOffset: {
-            width: 4,
-            height: 4,
-        },
-        shadowOpacity: 0.9,
-        shadowRadius: 1
+        textAlign: 'center'
     },
     modText: {
         marginBottom: 15,
@@ -81,6 +66,15 @@ const styles = StyleSheet.create({
         color: 'white',
         fontSize: 18
     },
+    shadow: {
+        shadowColor: '#000',
+        shadowOffset: {
+            width: 4,
+            height: 4,
+        },
+        shadowOpacity: 0.9,
+        shadowRadius: 1
+    }
 });
 
 export default ModalPopup;
