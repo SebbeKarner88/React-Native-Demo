@@ -1,5 +1,15 @@
 import React from "react";
-import {Dimensions, Image, Keyboard, StyleSheet, Text, TouchableWithoutFeedback, TouchableOpacity, Linking,  View} from "react-native";
+import {
+    Dimensions,
+    Image,
+    Keyboard,
+    StyleSheet,
+    Text,
+    TouchableWithoutFeedback,
+    TouchableOpacity,
+    Linking,
+    View
+} from "react-native";
 
 const GameBox = ({title, system, image, rating, link}) => {
 
@@ -8,11 +18,13 @@ const GameBox = ({title, system, image, rating, link}) => {
             <View style={{alignItems: 'center'}}>
                 <View style={styles.gameBox}>
                     <View style={styles.gameCard}>
-                        <TouchableOpacity onPress={() => {Linking.openURL(`${link}`)}}>
+                        <TouchableOpacity onPress={() => {
+                            Linking.openURL(`${link}`)
+                        }}>
                             <Image
-                            style={styles.image}
-                            source={{uri: `${image}`}}
-                        />
+                                style={styles.image}
+                                source={{uri: `${image}`}}
+                            />
                         </TouchableOpacity>
                         <View>
                             <Text style={styles.Title}>{title}</Text>
@@ -43,7 +55,7 @@ const styles = StyleSheet.create({
         shadowColor: '#000',
         shadowOffset: {
             width: 6,
-            height:6,
+            height: 6,
         },
         shadowOpacity: 0.9,
         shadowRadius: 2

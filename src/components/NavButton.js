@@ -6,14 +6,14 @@ const NavButton = ({navigation, path, label}) => {
     return <TouchableOpacity
         onPress={() => navigation.navigate(path)}>
         <Text
-            style={styles.Button}>
+            style={styles.button}>
             {label}
         </Text>
     </TouchableOpacity>
 };
 
 const styles = StyleSheet.create({
-    Button: {
+    button: {
         fontSize: 20,
         fontWeight: 'bold',
         color: '#5fc4e4',

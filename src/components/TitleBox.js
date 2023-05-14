@@ -6,8 +6,8 @@ const TitleBox = ({title}) => {
     return (
         <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
             <View style={{alignItems: 'center'}}>
-                <View style={styles.TitleBox}>
-                    <Text style={styles.Title}>{title}</Text>
+                <View style={styles.titleBox}>
+                    <Text style={styles.title}>{title}</Text>
                 </View>
             </View>
         </TouchableWithoutFeedback>
@@ -15,7 +15,7 @@ const TitleBox = ({title}) => {
 };
 
 const styles = StyleSheet.create({
-    TitleBox: {
+    titleBox: {
         backgroundColor: 'rgba(0,0,0,0.51)',
         marginTop: 30,
         width: Dimensions.get('window').width - 50,
@@ -30,13 +30,13 @@ const styles = StyleSheet.create({
         shadowColor: '#000',
         shadowOffset: {
             width: 6,
-            height:6,
+            height: 6,
         },
         shadowOpacity: 0.9,
         shadowRadius: 2
 
     },
-    Title: {
+    title: {
         fontSize: 30,
         fontWeight: 'bold',
         color: '#60c5e5',

@@ -1,5 +1,5 @@
 import React from 'react';
-import {View, StyleSheet, Dimensions, ImageBackground, FlatList} from "react-native";
+import {View, Dimensions, ImageBackground, FlatList} from "react-native";
 import Header from "../components/Header";
 import TitleBox from "../components/TitleBox";
 import GameBox from "../components/GameBox";
